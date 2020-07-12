@@ -5,7 +5,7 @@ title:               'Highly Reliable'
 tagline:             'Are we there yet?'
 description:         ''
 url:                 'http://minicomp.github.io'
-baseurl:             '/ed'
+baseurl:             ''
 
 # About/contact
 author:

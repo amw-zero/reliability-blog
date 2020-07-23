@@ -1,0 +1,1 @@
+The difference between testing models and construction, i.e. TLA+ / Alloy vs. a test suite on the real code.

@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/assets/form-app/static/css/main.2680dfa7.chunk.css",
+    "main.js": "/assets/form-app/static/js/main.c2d46686.chunk.js",
+    "main.js.map": "/assets/form-app/static/js/main.c2d46686.chunk.js.map",
+    "runtime-main.js": "/assets/form-app/static/js/runtime-main.796f6bea.js",
+    "runtime-main.js.map": "/assets/form-app/static/js/runtime-main.796f6bea.js.map",
+    "static/css/2.aa7fcd32.chunk.css": "/assets/form-app/static/css/2.aa7fcd32.chunk.css",
+    "static/js/2.ce579bd5.chunk.js": "/assets/form-app/static/js/2.ce579bd5.chunk.js",
+    "static/js/2.ce579bd5.chunk.js.map": "/assets/form-app/static/js/2.ce579bd5.chunk.js.map",
+    "index.html": "/assets/form-app/index.html",
+    "precache-manifest.704057f2a9de34957b4ee7baab4f886b.js": "/assets/form-app/precache-manifest.704057f2a9de34957b4ee7baab4f886b.js",
+    "service-worker.js": "/assets/form-app/service-worker.js",
+    "static/css/2.aa7fcd32.chunk.css.map": "/assets/form-app/static/css/2.aa7fcd32.chunk.css.map",
+    "static/css/main.2680dfa7.chunk.css.map": "/assets/form-app/static/css/main.2680dfa7.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.796f6bea.js",
+    "static/css/2.aa7fcd32.chunk.css",
+    "static/js/2.ce579bd5.chunk.js",
+    "static/css/main.2680dfa7.chunk.css",
+    "static/js/main.c2d46686.chunk.js"
+  ]
+}

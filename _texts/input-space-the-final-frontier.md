@@ -105,7 +105,21 @@ At 20 `Users`, there are over 1 trillion possible `Resource` values.
 
 # Beyond pure functions
 
-The final reason that I think understanding input spaces is so crucial is that input space and state space are inextricably linked. What exactly is meant by state space?The input space and state space are intricately linked. While the input space determines what can be passed into individual functions, it also determines the individual states that the program can be in over the course of time. Let me explain.
+The final reason that I think understanding input spaces is so crucial is that, in stateful programs, input space and state space are inextricably linked.
+
+**state space:** _the set of all states and allowable transitions between them in a stateful system_[^fn7]
+
+(remember, we formally defined "state" at the beginning of the post as "an assignment of values to variables")
+
+[click here app](/assets/form-app)
+
+Interactive information systems are inherently stateful, and consist of more than just pure functions. When we interact with them over time, we accrete and erode data. 
+
+In this way, the state space is the acceptable traversals through the input space.
+
+Input space is the static inputs to a program. State space is its dynamic behavior over time.
+
+The input space and state space are intricately linked. While the input space determines what can be passed into individual functions, it also determines the individual states that the program can be in over the course of time. Let me explain.
 
 Back to our definition of "behavior," which is a sequence of states over time. 
 
@@ -119,7 +133,6 @@ CanUserAccessResource
 The input space is the set of possible states that can be transitioned to, but the number of actual transitions depends on the requirements of the behaviors.
 
 Now, we don't need to test one trillion users to detect bugs. Daniel Jackson coined the phrase "small scope hypothesis," (citation, Software Abstractions) which means that we can test these operations for a small _U_. We probably want to introduce _R_ as the number of Resources in the system as well, so that we can test a few users getting added and removed from a few different resources.
-
 
 # Closing Thoughts
 
@@ -152,3 +165,5 @@ DO-178C (avionics certification) + modifed condition / decision coverage
 [^fn5]: Types are effectively sets of possible values, and _n(T)_ yields the cardinality of the set.
 
 [^fn6]: I explained the reasoning behind each analysis, but these become easier over time. You use the rule of product to compute _n_ for a record type. _n_ of an enum type is simply equal to the number of variants there are. And _n_ of an array or list is equal to 2^_B_ where _B_ is some practical bound on the data that can be stored in the array.
+
+[^fn7]: Note, searching for "state space" will frequently returns results for [state-space representation or state-space models](https://en.wikipedia.org/wiki/State-space_representation). They may draw on similar concepts, but this is not what I'm talking about. I'm referring to [this notion](https://en.wikipedia.org/wiki/State_space) of state space, where it represents the individual states that a discrete system can be in.

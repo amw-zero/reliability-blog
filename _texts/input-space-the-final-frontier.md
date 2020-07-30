@@ -89,7 +89,7 @@ Let's also assume that there are $$U$$ `Users` in our database at a given time (
 
 The fields of record types can vary independently, meaning we can use the rule of product to determine their total possible values, i.e. $$n(UserAuthorization) = n(AccessLevel) \cdot n(User) = 2U$$.
 
-Now, `Resource` has a single field, an array of `UserAuthorizations`. Determining the number of possible arrays is a confusing problem at first glance. Arrays are dynamic and flexible data structures, and you can create Arrays of arbitrary sizes. We might be tempted to think that $$n(Array)$$ is infinite. However, we can again use the $$U$$ as an upper bound-- there's no need to consider the access levels of users outside of the system.
+Now, `Resource` has a single field, an array of `UserAuthorizations`. Determining the number of possible arrays is a confusing problem at first glance. Arrays are dynamic and flexible data structures, and you can create Arrays of arbitrary sizes. We might be tempted to think that $$n(Array)$$ is infinite. However, we can again use $$U$$ as an upper bound-- there's no need to consider the access levels of users outside of the system.
 
 The problem is then reduced to how many different arrays of length $$U$$ there can be. We can consider an array to be logically equivalent to a set in this case, and we know that a set's power set is the set of all of its possible subsets. For a set with $$n$$ elements, its power set has $$2^n$$ elements. Finally, $$n(Resource) = n(UserAuthorization[]) = 2^{n(UserAuthorization)} = 2^{2U}$$.[^fn6]
 

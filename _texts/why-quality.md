@@ -4,13 +4,21 @@ title: Why quality?
 author: Alex Weisberger
 ---
 
-First thing's first: why should we care about the quality of software? Does it matter?[^fn1] The answer, like all answers, is that it completely depends on the context. Software is vastly diverse, and not all applications require the same level of reliability. The most obvious litmus test is "will people die if the application fails to perform its job?" but that isn't the only dimension to consider. For example, while human life is not at stake in a typical money transaction, people are very sensitive to mistakes made with their money. If my credit card gets declined because my bank added an extra zero to a previous charge, I'm going to immediately be worried that I'll never get it back. No matter what, it will take time to resolve. Our time is precious, our money is earned, and we expect our banking software to be reliable.
+First thing's first: why should we care about the quality of software? Does it matter?[^fn1] The answer, like all answers, is that it completely depends on the context. Software is vastly diverse, and not all applications require the same level of reliability. The most obvious litmus test is "will people die if the application fails to perform its job?" That isn't even the only dimension to consider, though. For example, people are very sensitive to mistakes made with their money even though someone is unlikely to lose their life if there's an error in a money transaction. Our time is precious, our money is earned, and we expect our banking software to be reliable.
 
-Error classes are themselves contextual. If a UI button is mistakenly released with the wrong color, will that cause outrage in the customerbase or cost the company money? Probably not. Color can be aesthetic, and while aesthetics are important, they're fairly easy to fix and generally don't cause harm if they're wrong. However, color can also convey meaning. Consider a legend, where color can be used to distinguish between categories. If a navigation application mistakenly displayed the traffic as green instead of red, that could be extremely frustrating. I trusted the legend, and it fed me to the wolf of a traffic jam. Within the same application, a failure to display the correct colors can be totally benign or very disappointing depending on the scenario.
+Errors are themselves contextual. If a UI button is mistakenly released with the wrong color, it might not cause outrage in the customerbase or cost the company money. Color can be aesthetic, and while aesthetics are important, they're fairly easy to fix and generally don't cause harm if they're wrong. However, color can also convey semantic meaning. Consider a legend, where color can be used to distinguish between categories. If a navigation application mistakenly displayed the traffic as green instead of red, that could be extremely frustrating. Trusting the software legend could have gotten you stuck in a traffic jam. Within the same application, a failure to display the correct colors can be totally benign or very disappointing depending on the use case.
 
 While I think a lot about correctness and reliability, there is more to quality than just that. In fact, those are just the prerequisites to quality. At a higher level, though, quality is about people, their feelings, and their expectations. When we use a software product, especially when we pay for it, we have an expectation of what we want in return. An expectation has an implicit context, e.g. we expect to repair a car at some point after purchasing it. Quality does not mean perfection- it means that our expectations are met.
 
-(stronger) We should care about reliability, because selling someone something that doesn't meet their expectations is bad for everyone
+This is the core of the question of quality - is the act of meeting expectations important with software?
+
+## The Intuitive Argument
+
+I'm always apprehensive to make fuzzy claims, but I think it's warranted here. This is just a value call on my part, and I understand that there are differing opinions.
+
+My view is that meeting expectations is the foundation of commerce and business, and  Because of that, it's important for software to work properly.
+
+This is doubly true if we're talking about paid software. I can't wrap my mind around it being acceptable to charge money for something that doesn't work. This is where software gets tricky, because a piece of software often performs so many functions that a large percentage of them do in fact work. However, it's pretty safe to say that some subset of functions in every piece of software simply does not work. This is just accepted in the industry, as evidenced by the existence of Zendesk. 
 
 ## A Lemon Market
 
@@ -18,7 +26,7 @@ While I think a lot about correctness and reliability, there is more to quality 
 
 In the US, we have a word for a car that has all kinds of unexpected problems. We call it a "lemon," and there are laws that protect car buyers from purchasing them. The laws exist because of information asymmetry-- cars are complicated machines, and most people aren't car designers or mechanics. While the average buyer can do a test drive and spot obvious problems, they can't know about the faulty fuel-injection system that's going to break in 2 months. Again, expectations are contextual, and people know that cars will require maintenance at some point. Maybe we expect to replace tires every so often, and get regular oil changes, and replace an alternator after 5 years, and replace windshield wipers, etc. There are reasonable things to go wrong with a car, and our expectation forms a mental threshold. Once that threshold is crossed, we consider the car to be a poor investment, a waste of time, a waste of money, and a breach of trust.
 
-Software is also complex. But unlike cars, there's almost nothing that you can do to software to inspect its quality from the outside. A car has a single primary function. Software usually has dozens, if not hundreds. As we know from manual testing, coming across bugs by "test driving" an application is not easy. 
+Software is also complex. But unlike cars, there's almost nothing that you can do to software to inspect its quality from the outside. A car has a single primary function. Software usually has dozens, if not hundreds. As we know from manual testing, coming across bugs by "test driving" an application is not easy.
 
 
 

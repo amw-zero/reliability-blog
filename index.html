@@ -3,9 +3,9 @@ layout: default
 title: "Concerning Quality"
 ---
 <div class="introduction">
-<p>
-  Musings about all things related to software quality
-</p>
+  <p class="intro">
+    Musings about all things related to software quality, testing, and verification
+  </p>
 </div>
 
 <hr>
@@ -19,8 +19,16 @@ title: "Concerning Quality"
       <a href="{{ site.baseurl }}{{ item.url }}">
         {{ item.title }}
       </a>
-      <span class="post-date">{{ item.date | date: '%B %d, %Y' }}</span>
+      <p class="post-date">{{ item.date | date: '%B %d, %Y' }}</p>
+      <p>{{ item.excerpt }}</p>
     </li>
   {% endfor %}
   </ul>
+
+  <!--
+  <h2>Tags</h2>
+  {% for tag in site.tags %}
+    <p>{{tag[0]}}</p>
+  {% endfor %}
+  -->
 </div>

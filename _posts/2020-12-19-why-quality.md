@@ -1,10 +1,12 @@
 ---
-layout: post
-title: Why quality?
+layout: narrative
+title: Why Quality?
 author: Alex Weisberger
 ---
 
-First thing's first: why should we care about the quality of software? Does it matter?[^fn1] The answer, like all answers, is that it completely depends on the context. Software is vastly diverse, and not all applications require the same level of reliability. The most obvious litmus test is "will people die if the application fails to perform its job?" That isn't the only dimension to consider, though. For example, people are very sensitive to mistakes made with their money. Our time is precious, our money is earned, and we expect our banking software to work correctly.
+First thing's first: why should we care about the quality of software? 
+
+Does it matter?[^fn1] The answer, like all answers, is that it completely depends on the context. Software is vastly diverse, and not all applications require the same level of reliability. The most obvious litmus test is "will people die if the application fails to perform its job?" That isn't the only dimension to consider, though. For example, people are very sensitive to mistakes made with their money. Our time is precious, our money is earned, and we expect our banking software to work correctly.
 
 Errors are themselves contextual. If a UI button is mistakenly released with the wrong color, it might not cause outrage in the customerbase or cost the company money. Color can be aesthetic, and while aesthetics are important, they're fairly easy to fix and generally don't cause harm when they're wrong. However, color can also convey semantic meaning. Consider a legend, where color can be used to distinguish between categories. It would be extremely frustrating if a navigation application mistakenly displayed a traffic value as green (low traffic) instead of red (high traffic). Within the same application, a failure to display the correct colors can be totally benign or very disappointing depending on the use case.
 

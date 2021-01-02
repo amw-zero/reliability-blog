@@ -177,8 +177,8 @@ function UserForm({ users, onSearch }: UserFormProps) {
     <button onClick={() => onSearch(searchResults)}>
       {"Search for Users"}
     </button>
-    {users.map((asset => {
-      return <p>{asset.name}</p>
+    {users.map((user => {
+      return <p>{user.name}</p>
     }))}
   </div>;
 }
